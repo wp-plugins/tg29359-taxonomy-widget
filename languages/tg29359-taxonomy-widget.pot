@@ -1,0 +1,21 @@
+msgid "tg29359 taxonomy widget"
+msgstr ""
+
+msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
+msgstr ""
+
+msgid "A list or dropdown of Taxonomies."
+msgstr ""
+
+msgid "Taxonomies"
+msgstr ""
+
+msgid "Select Taxonomy"
+msgstr ""
+
+msgid "Custom Select Taxonomy:"
+msgstr ""
+
+msgid "Hide Empty"
+msgstr ""
+
