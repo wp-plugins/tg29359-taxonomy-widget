@@ -6,7 +6,7 @@
 Plugin Name: tg29359 taxonomy widget
 Plugin URI: http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/
 Description: Displays a list or dropdown of taxonomies in a sidebar widget.
-Version: 0.0.1
+Version: 0.0.2
 Author: tg29359
 Author URI: http://tg29359.rdy.jp/
 DomainPath: /languages
