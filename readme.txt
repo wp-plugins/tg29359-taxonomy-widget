@@ -1,6 +1,6 @@
 === tg29359 taxonomy widget ===
 Contributors: tg29359
-Tags: taxonomy, widget
+Tags: taxonomy, widget, sidebar
 Requires at least: 4.1.1
 Tested up to: 4.1.1
 Stable tag: 0.0.1
