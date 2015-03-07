@@ -6,7 +6,7 @@
 Plugin Name: tg29359 taxonomy widget
 Plugin URI: http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/
 Description: Displays a list or dropdown of taxonomies in a sidebar widget.
-Version: 0.0.2
+Version: 0.0.3
 Author: tg29359
 Author URI: http://tg29359.rdy.jp/
 DomainPath: /languages
@@ -36,7 +36,7 @@ class tg29359_Walker_TaxonomyDropdown extends Walker
 
     public function start_el(&$output, $category, $depth = 0, $args = array(), $id = 0)
     {
-        $pad = str_repeat('&nbsp;', $depth * 3);
+        $pad = str_repeat('&#045;', $depth * 3);
         $cat_name = apply_filters('list_cats', $category->name, $category);
         $link = get_term_link($category->slug, $category->taxonomy);
         $output .= "\t<option class=\"level-$depth\" value=\"".$link."\"";
