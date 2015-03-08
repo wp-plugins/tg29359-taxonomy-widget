@@ -1,26 +1,26 @@
+# Copyright (C) 2015 tg29359 taxonomy widget
+# This file is distributed under the same license as the tg29359 taxonomy widget package.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-03-07 00:31+0900\n"
-"Last-Translator: tg29359 <tg29359@tg29359.rdy.jp>\n"
-"Language-Team: \n"
-"Language: ja\n"
+"Project-Id-Version: tg29359 taxonomy widget 0.0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/tg29359-taxonomy-widget\n"
+"POT-Creation-Date: 2015-03-08 00:30:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-03-08 15:42+0900\n"
+"Last-Translator: tg29359 <tg29359@tg29359.rdy.jp>\n"
+"Language-Team: \n"
 "X-Generator: Poedit 1.7.4\n"
-"X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-msgid "tg29359 taxonomy widget"
-msgstr "tg29359分類ウィジェット"
-
-msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
-msgstr "サイドバーウィジェットに分類のリストやドロップダウンを表示します。"
+"Language: ja\n"
 
 msgid "A list or dropdown of Taxonomies."
 msgstr "分類のリストやドロップダウン"
+
+#. Plugin Name of the plugin/theme
+msgid "tg29359 taxonomy widget"
+msgstr "tg29359分類ウィジェット"
 
 msgid "Taxonomies"
 msgstr "分類"
@@ -28,8 +28,51 @@ msgstr "分類"
 msgid "Select Taxonomy"
 msgstr "分類を選択"
 
-msgid "Custom Select Taxonomy:"
-msgstr "「分類を選択」の代わり:"
+msgid "No taxonomies"
+msgstr "分類なし"
 
-msgid "Hide Empty"
+msgid "Replace \"Select Taxonomy\" of dropdown to:"
+msgstr "ドロップダウンの「分類を選択」の代替:"
+
+msgid "Replace \"No taxonomies\" of list to:"
+msgstr "リストの「分類なし」の代替:"
+
+msgid "Include post counts of child taxonomies"
+msgstr "投稿数に下位分類分も含める"
+
+msgid "Hide empty taxonomy"
 msgstr "空の分類は非表示"
+
+msgid "Hide empty dropdown"
+msgstr "空のドロップダウンは非表示"
+
+msgid "Sort By:"
+msgstr "ソート基準"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Count"
+msgstr "投稿数"
+
+msgid "Term group"
+msgstr "タームグループ"
+
+msgid "*Sorry, this feature does not work yet, at least with the plugin \"Category Order and Taxonomy Terms Order\"."
+msgstr "※この機能はまだ動きません。少なくとも「Category Order and Taxonomy Terms Order」を使っている環境では。申し訳ございません。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
+msgstr "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
+
+#. Description of the plugin/theme
+msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
+msgstr "サイドバーウィジェットに分類のリストやドロップダウンを表示します。"
+
+#. Author of the plugin/theme
+msgid "tg29359"
+msgstr "tg29359"
+
+#. Author URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/"
+msgstr "http://tg29359.rdy.jp/"

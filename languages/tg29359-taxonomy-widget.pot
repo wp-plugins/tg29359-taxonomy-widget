@@ -1,10 +1,24 @@
-msgid "tg29359 taxonomy widget"
+# Copyright (C) 2015 tg29359 taxonomy widget
+# This file is distributed under the same license as the tg29359 taxonomy widget package.
+msgid ""
 msgstr ""
-
-msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
-msgstr ""
+"Project-Id-Version: tg29359 taxonomy widget 0.0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/tg29359-taxonomy-"
+"widget\n"
+"POT-Creation-Date: 2015-03-08 00:30:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 msgid "A list or dropdown of Taxonomies."
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (tg29359 taxonomy widget 0.0.4)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+msgid "tg29359 taxonomy widget"
 msgstr ""
 
 msgid "Taxonomies"
@@ -13,9 +27,48 @@ msgstr ""
 msgid "Select Taxonomy"
 msgstr ""
 
-msgid "Custom Select Taxonomy:"
+msgid "No taxonomies"
 msgstr ""
 
-msgid "Hide Empty"
+msgid "Replace \"Select Taxonomy\" of dropdown to:"
 msgstr ""
 
+msgid "Replace \"No taxonomies\" of list to:"
+msgstr ""
+
+msgid "Include post counts of child taxonomies"
+msgstr ""
+
+msgid "Hide empty taxonomy"
+msgstr ""
+
+msgid "Sort By:"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Term group"
+msgstr ""
+
+msgid "*Sorry, this feature does not work yet, at least with the plugin \"Category Order and Taxonomy Terms Order\"."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "tg29359"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/"
+msgstr ""
