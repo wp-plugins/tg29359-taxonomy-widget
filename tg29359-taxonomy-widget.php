@@ -6,7 +6,7 @@
 Plugin Name: tg29359 taxonomy widget
 Plugin URI: http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/
 Description: Displays a list or dropdown of taxonomies in a sidebar widget.
-Version: 0.0.4
+Version: 0.0.5
 Author: tg29359
 Author URI: http://tg29359.rdy.jp/
 DomainPath: /languages
@@ -72,7 +72,9 @@ class tg29359_Widget_Taxonomies extends WP_Widget
 
     public function widget($args, $instance)
     {
-        $title = apply_filters('widget_title', empty($instance['title']) ? __('Taxonomies', 'tg29359-taxonomy-widget') : $instance['title'], $instance, 'tg29359_taxonomies');
+        static $first_dropdown = true;
+
+        $title = apply_filters('widget_title', empty($instance['title']) ? __('Taxonomies', 'tg29359-taxonomy-widget') : $instance['title'], $instance, $this->id_base);
 
         $c = !empty($instance['count']) ? '1' : '0';
         $pad_counts = !empty($instance['pad_counts']) ? '1' : '0';
@@ -99,32 +101,49 @@ class tg29359_Widget_Taxonomies extends WP_Widget
             echo $args['before_title'] . $title . $args['after_title'];
         }
 
-        $cat_args = array('taxonomy' => $this->taxonomy, 'show_count' => $c, 'pad_counts' => $pad_counts, 'hierarchical' => $h, 'hide_empty' => $hide_empty, 'orderby' => $orderby, 'order' => $order);
+        $cat_args = array(
+            'taxonomy'      => $this->taxonomy,
+            'show_count'    => $c,
+            'pad_counts'    => $pad_counts,
+            'hierarchical'  => $h,
+            'hide_empty'    => $hide_empty,
+            'orderby'       => $orderby,
+            'order'         => $order
+        );
+
         if ($d) {
+            $dropdown_id = ($first_dropdown) ? 'tg29359_taxonomies_tax' : "{$this->id_base}-dropdown-{$this->number}";
+            $first_dropdown = false;
+
+            echo '<label class="screen-reader-text" for="' . esc_attr( $dropdown_id ) . '">' . $title . '</label>';
+ 
             if (!empty($instance['select_xxx_for_dropdown'])) {
                 $cat_args['show_option_none'] = $instance['select_xxx_for_dropdown'];
             } else {
                 $cat_args['show_option_none'] = __('Select Taxonomy', 'tg29359-taxonomy-widget');
             }
-            $cat_args['id'  ] = 'tg29359_taxonomies_tax';
+            $cat_args['id'  ] = $dropdown_id;
             $cat_args['name'] = 'tg29359_taxonomies_tax';
             $cat_args['walker'] = $this->walker;
 	        $cat_args['hide_if_empty'] = $hide_if_empty;
 
             wp_dropdown_categories(apply_filters('widget_categories_dropdown_args', $cat_args));
 ?>
+
 <script type='text/javascript'>
 /* <![CDATA[ */
-    var tg29359_taxonomies_dropdown = document.getElementById('tg29359_taxonomies_tax');
-    function tg29359_taxonomies_onTaxonomyChange()
-    {
-        if (tg29359_taxonomies_dropdown.options[tg29359_taxonomies_dropdown.selectedIndex].value != 'null') {
-            location.href = tg29359_taxonomies_dropdown.options[tg29359_taxonomies_dropdown.selectedIndex].value;
+(function() {
+    var dropdown = document.getElementById("<?php echo esc_js( $dropdown_id ); ?>");
+    function onTaxChange() {
+        if (dropdown.options[dropdown.selectedIndex].value != 'null') {
+            location.href = dropdown.options[dropdown.selectedIndex].value;
         }
     }
-    tg29359_taxonomies_dropdown.onchange = tg29359_taxonomies_onTaxonomyChange;
+    dropdown.onchange = onTaxChange;
+})();
 /* ]]> */
 </script>
+
 <?php
         } else {
 ?>
