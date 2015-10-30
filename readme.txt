@@ -3,7 +3,7 @@ Contributors: tg29359
 Tags: taxonomy, widget, sidebar
 Requires at least: 4.1.1
 Tested up to: 4.3.1
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,7 @@ Not coming soon.
 == Changelog ==
 
 = 0.0.5 =
-* Fixed the bug that using more than one instance of this widget as dropdowns, some of the dropdowns can not jump to the selected taxonomy archives.
+* Fixed the bug that using two or more instances of this widget as dropdowns on a page, some of the dropdowns can not jump to the selected taxonomy archives.
 
 = 0.0.4 =
 * Changed 'Custom Select Taxonomy:' to 'Replace "Select Taxonomy" of dropdown to:'
@@ -40,7 +40,7 @@ Not coming soon.
 * Added 'Hide empty dropdown'
 * Added 'Replace "No taxonomies" of list to:'
 * Added 'Include post counts of child taxonomies'
-* Added 'Order by' and 'Order' (but they does not work yet)
+* Added 'Order by' and 'Order' (but they do not work yet)
 
 = 0.0.3 =
 * Changed the character for displaying hierarchical indention from non-breaking space to hyphen. Because non-breaking space is ignored on iOS 8, and dropdown is displayed flat even though "Show hierarchy" is checked.
@@ -54,8 +54,9 @@ Not coming soon.
 == Upgrade Notice ==
 
 = 0.0.5 =
-If you are using just one instance of this widget on a page, you do not need to upgrade to this version.
-But if you want to use more than one instance of this widget on a page, upgrade to this version.
+This version fixed the problem that occurs if two or more instances of this widget are used as dropdowns on a page.
+If you are using just one instance, you do not need to upgrade to this version.
+But if you want more than one instance, upgrade it.
 
 = 0.0.4 =
 User of the previous version do not need to upgrade to this version.
