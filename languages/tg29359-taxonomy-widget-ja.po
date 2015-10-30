@@ -1,0 +1,97 @@
+# Copyright (C) 2015 tg29359 taxonomy widget
+# This file is distributed under the same license as the tg29359 taxonomy widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: tg29359 taxonomy widget 0.0.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/tg29359-taxonomy-widget\n"
+"POT-Creation-Date: 2015-03-08 07:59:25+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-03-08 17:23+0900\n"
+"Last-Translator: tg29359 <tg29359@tg29359.rdy.jp>\n"
+"Language-Team: tg29359 <tg29359@tg29359.rdy.jp>\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
+
+#: tg29359-taxonomy-widget.php:66
+msgid "A list or dropdown of Taxonomies."
+msgstr "分類のリストやドロップダウン"
+
+#. Plugin Name of the plugin/theme
+#: tg29359-taxonomy-widget.php:67
+msgid "tg29359 taxonomy widget"
+msgstr "tg29359分類ウィジェット"
+
+#: tg29359-taxonomy-widget.php:75
+msgid "Taxonomies"
+msgstr "分類"
+
+#: tg29359-taxonomy-widget.php:107
+msgid "Select Taxonomy"
+msgstr "分類を選択"
+
+#: tg29359-taxonomy-widget.php:137
+msgid "No taxonomies"
+msgstr "分類なし"
+
+#: tg29359-taxonomy-widget.php:204
+msgid "Replace \"Select Taxonomy\" of dropdown to:"
+msgstr "ドロップダウンの「分類を選択」の代替:"
+
+#: tg29359-taxonomy-widget.php:207
+msgid "Replace \"No taxonomies\" of list to:"
+msgstr "リストの「分類なし」の代替:"
+
+#: tg29359-taxonomy-widget.php:221
+msgid "Include post counts of child taxonomies"
+msgstr "投稿数に下位分類分も含める"
+
+#: tg29359-taxonomy-widget.php:224
+msgid "Hide empty taxonomy"
+msgstr "空の分類は非表示"
+
+#: tg29359-taxonomy-widget.php:227
+msgid "Hide empty dropdown"
+msgstr "空のドロップダウンは非表示"
+
+#: tg29359-taxonomy-widget.php:238
+msgid "Sort By:"
+msgstr "ソート基準"
+
+#: tg29359-taxonomy-widget.php:241
+msgid "ID"
+msgstr "ID"
+
+#: tg29359-taxonomy-widget.php:243
+msgid "Count"
+msgstr "投稿数"
+
+#: tg29359-taxonomy-widget.php:244
+msgid "Term group"
+msgstr "タームグループ"
+
+#: tg29359-taxonomy-widget.php:247 tg29359-taxonomy-widget.php:255
+msgid ""
+"*Sorry, this feature does not work yet, at least with the plugin \"Category Order and "
+"Taxonomy Terms Order\"."
+msgstr ""
+"※この機能はまだ動きません。少なくとも「Category Order and Taxonomy Terms Order」を使って"
+"いる環境では。申し訳ございません。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
+msgstr "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
+
+#. Description of the plugin/theme
+msgid "Displays a list or dropdown of taxonomies in a sidebar widget."
+msgstr "サイドバーウィジェットに分類のリストやドロップダウンを表示します。"
+
+#. Author of the plugin/theme
+msgid "tg29359"
+msgstr "tg29359"
+
+#. Author URI of the plugin/theme
+msgid "http://tg29359.rdy.jp/"
+msgstr "http://tg29359.rdy.jp/"
