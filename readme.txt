@@ -31,6 +31,9 @@ Not coming soon.
 
 == Changelog ==
 
+= 0.0.6 =
+* Added 'Replace "---" indention of dropdown to:'
+
 = 0.0.5 =
 * Fixed the bug that using two or more instances of this widget as dropdowns on a page, some of the dropdowns can not jump to the selected taxonomy archives.
 
@@ -52,6 +55,10 @@ Not coming soon.
 * The first version of this plugin.
 
 == Upgrade Notice ==
+
+= 0.0.6 =
+In this release, 'Replace "---" indention of dropdown to:' option was added.
+If you want to use the option, upgrade to this version.
 
 = 0.0.5 =
 This version fixed the problem that occurs if two or more instances of this widget are used as dropdowns on a page.

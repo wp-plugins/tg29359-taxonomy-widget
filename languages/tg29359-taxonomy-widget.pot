@@ -92,3 +92,12 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://tg29359.rdy.jp/"
 msgstr ""
+
+#
+msgid "Replace \"&#045;&#045;&#045;\" indention of dropdown to:"
+msgstr ""
+
+#
+msgid "*if you want to use a space, input &amp;nbsp&#059;. note that iOS ignore a space."
+msgstr ""
+

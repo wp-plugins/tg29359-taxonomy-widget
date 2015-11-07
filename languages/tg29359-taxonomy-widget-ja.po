@@ -8,10 +8,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-08 17:23+0900\n"
+"PO-Revision-Date: 2015-11-07 10:17+0900\n"
 "Last-Translator: tg29359 <tg29359@tg29359.rdy.jp>\n"
 "Language-Team: tg29359 <tg29359@tg29359.rdy.jp>\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language: ja\n"
 
@@ -77,8 +77,8 @@ msgid ""
 "*Sorry, this feature does not work yet, at least with the plugin \"Category Order and "
 "Taxonomy Terms Order\"."
 msgstr ""
-"※この機能はまだ動きません。少なくとも「Category Order and Taxonomy Terms Order」を使って"
-"いる環境では。申し訳ございません。"
+"※この機能はまだ動きません。少なくとも「Category Order and Taxonomy Terms Order」を使っ"
+"ている環境では。申し訳ございません。"
 
 #. Plugin URI of the plugin/theme
 msgid "http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/"
@@ -95,3 +95,13 @@ msgstr "tg29359"
 #. Author URI of the plugin/theme
 msgid "http://tg29359.rdy.jp/"
 msgstr "http://tg29359.rdy.jp/"
+
+#
+msgid "Replace \"&#045;&#045;&#045;\" indention of dropdown to:"
+msgstr "ドロップダウンの「---」字下げの代替:"
+
+#
+msgid "*if you want to use a space, input &amp;nbsp&#059;. note that iOS ignore a space."
+msgstr ""
+"※半角空白文字を使いたい場合は&amp;nbsp&#059;と入力して下さい。半角空白文字はiOSでは無視"
+"されますので注意して下さい。"

@@ -6,7 +6,7 @@
 Plugin Name: tg29359 taxonomy widget
 Plugin URI: http://tg29359.rdy.jp/app/tg29359-taxonomy-widget/
 Description: Displays a list or dropdown of taxonomies in a sidebar widget.
-Version: 0.0.5
+Version: 0.0.6
 Author: tg29359
 Author URI: http://tg29359.rdy.jp/
 DomainPath: /languages
@@ -36,7 +36,11 @@ class tg29359_Walker_TaxonomyDropdown extends Walker
 
     public function start_el(&$output, $category, $depth = 0, $args = array(), $id = 0)
     {
-        $pad = str_repeat('&#045;', $depth * 3);
+        $walker_indention = $args['walker_indention'];
+        if(empty($walker_indention)){
+            $walker_indention = '&#045;&#045;&#045;';
+        }
+        $pad = str_repeat($walker_indention, $depth * 1);
         $cat_name = apply_filters('list_cats', $category->name, $category);
         $link = get_term_link($category->slug, $category->taxonomy);
         $output .= "\t<option class=\"level-$depth\" value=\"".$link."\"";
@@ -125,6 +129,11 @@ class tg29359_Widget_Taxonomies extends WP_Widget
             $cat_args['id'  ] = $dropdown_id;
             $cat_args['name'] = 'tg29359_taxonomies_tax';
             $cat_args['walker'] = $this->walker;
+            if (!empty($instance['walker_indention'])) {
+                $cat_args['walker_indention'] = $instance['walker_indention'];
+            } else {
+                $cat_args['walker_indention'] = '';
+            }
 	        $cat_args['hide_if_empty'] = $hide_if_empty;
 
             wp_dropdown_categories(apply_filters('widget_categories_dropdown_args', $cat_args));
@@ -169,6 +178,7 @@ class tg29359_Widget_Taxonomies extends WP_Widget
         $instance = $old_instance;
         $instance['title'] = strip_tags($new_instance['title']);
         $instance['select_xxx_for_dropdown'] = strip_tags($new_instance['select_xxx_for_dropdown']);
+        $instance['walker_indention'] = strip_tags($new_instance['walker_indention']);
         $instance['no_taxonomies_for_list'] = strip_tags($new_instance['no_taxonomies_for_list']);
         $instance['count'] = !empty($new_instance['count']) ? 1 : 0;
         $instance['pad_counts'] = !empty($new_instance['pad_counts']) ? 1 : 0;
@@ -202,6 +212,8 @@ class tg29359_Widget_Taxonomies extends WP_Widget
         $title = esc_attr($instance['title']);
         $instance = wp_parse_args((array)$instance, array( 'select_xxx_for_dropdown' => ''));
         $select_xxx_for_dropdown = esc_attr($instance['select_xxx_for_dropdown']);
+        $instance = wp_parse_args((array)$instance, array( 'walker_indention' => ''));
+        $walker_indention = esc_attr($instance['walker_indention']);
         $instance = wp_parse_args((array)$instance, array( 'no_taxonomies_for_list' => ''));
         $no_taxonomies_for_list = esc_attr($instance['no_taxonomies_for_list']);
         $count = isset($instance['count']) ? (bool)$instance['count'] : false;
@@ -222,6 +234,11 @@ class tg29359_Widget_Taxonomies extends WP_Widget
             <br />
             <label for="<?php echo $this->get_field_id('select_xxx_for_dropdown'); ?>"><?php _e( 'Replace "Select Taxonomy" of dropdown to:', 'tg29359-taxonomy-widget'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('select_xxx_for_dropdown'); ?>" name="<?php echo $this->get_field_name('select_xxx_for_dropdown'); ?>" type="text" value="<?php echo $select_xxx_for_dropdown; ?>" />
+            <br />
+            <label for="<?php echo $this->get_field_id('walker_indention'); ?>"><?php _e( 'Replace "&#045;&#045;&#045;" indention of dropdown to:', 'tg29359-taxonomy-widget'); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('walker_indention'); ?>" name="<?php echo $this->get_field_name('walker_indention'); ?>" type="text" value="<?php echo $walker_indention; ?>" />
+            <br />
+            <span><?php _e('*if you want to use a space, input &amp;nbsp&#059;. note that iOS ignore a space.', 'tg29359-taxonomy-widget'); ?></span>
             <br />
             <label for="<?php echo $this->get_field_id('no_taxonomies_for_list'); ?>"><?php _e( 'Replace "No taxonomies" of list to:', 'tg29359-taxonomy-widget'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('no_taxonomies_for_list'); ?>" name="<?php echo $this->get_field_name('no_taxonomies_for_list'); ?>" type="text" value="<?php echo $no_taxonomies_for_list; ?>" />
