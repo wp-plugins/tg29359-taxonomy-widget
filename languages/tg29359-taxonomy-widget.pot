@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the tg29359 taxonomy widget package.
 msgid ""
 msgstr ""
-"Project-Id-Version: tg29359 taxonomy widget 0.0.4\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/tg29359-taxonomy-"
+"Project-Id-Version: tg29359 taxonomy widget 0.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tg29359-taxonomy-"
 "widget\n"
-"POT-Creation-Date: 2015-03-08 07:59:25+00:00\n"
+"POT-Creation-Date: 2015-11-07 01:51:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,65 +13,75 @@ msgstr ""
 "Last-Translator: tg29359 <tg29359@tg29359.rdy.jp>\n"
 "Language-Team: tg29359 <tg29359@tg29359.rdy.jp>\n"
 
-#: tg29359-taxonomy-widget.php:66
+#: tg29359-taxonomy-widget.php:70
 msgid "A list or dropdown of Taxonomies."
 msgstr ""
 
-#. #-#-#-#-#  plugin.pot (tg29359 taxonomy widget 0.0.4)  #-#-#-#-#
+#. #-#-#-#-#  plugin.pot (tg29359 taxonomy widget 0.0.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: tg29359-taxonomy-widget.php:67
+#: tg29359-taxonomy-widget.php:71
 msgid "tg29359 taxonomy widget"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:75
+#: tg29359-taxonomy-widget.php:81
 msgid "Taxonomies"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:107
+#: tg29359-taxonomy-widget.php:127
 msgid "Select Taxonomy"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:137
+#: tg29359-taxonomy-widget.php:165
 msgid "No taxonomies"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:204
+#: tg29359-taxonomy-widget.php:235
 msgid "Replace \"Select Taxonomy\" of dropdown to:"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:207
-msgid "Replace \"No taxonomies\" of list to:"
-msgstr ""
-
-#: tg29359-taxonomy-widget.php:221
-msgid "Include post counts of child taxonomies"
-msgstr ""
-
-#: tg29359-taxonomy-widget.php:224
-msgid "Hide empty taxonomy"
-msgstr ""
-
-#: tg29359-taxonomy-widget.php:227
-msgid "Hide empty dropdown"
-msgstr ""
-
 #: tg29359-taxonomy-widget.php:238
-msgid "Sort By:"
+msgid "Replace \"&#045;&#045;&#045;\" indention of dropdown to:"
 msgstr ""
 
 #: tg29359-taxonomy-widget.php:241
-msgid "ID"
+msgid ""
+"*if you want to use a space, input &amp;nbsp&#059;. note that iOS ignore a "
+"space."
 msgstr ""
 
 #: tg29359-taxonomy-widget.php:243
+msgid "Replace \"No taxonomies\" of list to:"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:257
+msgid "Include post counts of child taxonomies"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:260
+msgid "Hide empty taxonomy"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:263
+msgid "Hide empty dropdown"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:274
+msgid "Sort By:"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:277
+msgid "ID"
+msgstr ""
+
+#: tg29359-taxonomy-widget.php:279
 msgid "Count"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:244
+#: tg29359-taxonomy-widget.php:280
 msgid "Term group"
 msgstr ""
 
-#: tg29359-taxonomy-widget.php:247 tg29359-taxonomy-widget.php:255
+#: tg29359-taxonomy-widget.php:283 tg29359-taxonomy-widget.php:291
 msgid ""
 "*Sorry, this feature does not work yet, at least with the plugin \"Category "
 "Order and Taxonomy Terms Order\"."
@@ -92,12 +102,3 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://tg29359.rdy.jp/"
 msgstr ""
-
-#
-msgid "Replace \"&#045;&#045;&#045;\" indention of dropdown to:"
-msgstr ""
-
-#
-msgid "*if you want to use a space, input &amp;nbsp&#059;. note that iOS ignore a space."
-msgstr ""
-
